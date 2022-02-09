@@ -73,9 +73,11 @@ class RestaurantTest {
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>TOTAL COST<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     @Test
     public void selecting_item_from_menu_should_return_total_cost(){
-        int totalCost;
-        List<Item> Items = null;
-        totalCost = restaurant.getTotalCost(Items) ;
+        int totalCost = 0;
+        createRestaurant();
+        List<String> items = Arrays.asList("Sweet corn soup","Vegetable lasagne");
+        totalCost = restaurant.getCost(items);
+        assertEquals(388,totalCost);
     }
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>TOTAL COST<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 }

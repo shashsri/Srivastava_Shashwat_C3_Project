@@ -69,4 +69,13 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    //>>>>>>>>>>>>>>>>>>>>>>>>>>>TOTAL COST<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    @Test
+    public void selecting_item_from_menu_should_return_total_cost(){
+        int totalCost;
+        List<Item> Items = null;
+        totalCost = restaurant.getTotalCost(Items) ;
+    }
+    //>>>>>>>>>>>>>>>>>>>>>>>>>>>TOTAL COST<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 }
